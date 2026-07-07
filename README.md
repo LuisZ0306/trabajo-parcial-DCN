@@ -115,12 +115,3 @@ Una vez que la aplicación esté corriendo, puedes visualizar e interactuar dire
 *   Los datos obligatorios (DNI de 8 dígitos, teléfono de 9 dígitos, correos válidos) se validan en los DTOs de entrada, retornando errores descriptivos y estructurados bajo estado `400 Bad Request` en caso de fallos.
 
 ---
-
-## Sugerencia de Roles del Equipo para el Informe Técnico
-Para el reporte solicitado por el docente, pueden designar los roles de la siguiente manera:
-1.  **Integrante 1: Arquitecto Backend / Base de Datos Temporal**
-    *   *Responsabilidad:* Diseño de la arquitectura de paquetes, configuración de dependencias de Spring Boot y desarrollo de modelos (`Cliente`, `Tecnico`, `Solicitud`) y repositorios en memoria (`ConcurrentHashMap`).
-2.  **Integrante 2: Especialista en Lógica de Negocio (Servicios y DTOs)**
-    *   *Responsabilidad:* Creación de las interfaces e implementaciones de los servicios, definición de las reglas de negocio (ej. validar estado de técnico activo) y diseño de los `records` DTO (Request y Response) con validaciones estructuradas.
-3.  **Integrante 3: Desarrollador REST API / QA & Documentación**
-    *   *Responsabilidad:* Desarrollo de los controladores REST (`@RestController`), diseño de rutas jerárquicas, implementación de Swagger OpenAPI, y realización del testing completo de endpoints mediante Postman (generación de capturas de pantalla para el informe).
